@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<app-side-nav></app-side-nav>
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <h1>AI Image Detection</h1>
+
+      <div class="upload-section">
+        <input
+          type="file"
+          id="upload-input"
+          class="upload-input"
+          accept="image/*"
+        />
+        <label
+          for="upload-input"
+          class="upload-label"
+          (change)="onFileSelected($event)"
+          >Choose Image</label
+        >
+      </div>
+      <!--Boutonwhen you click  besh ta3eml fiha traitement Ai -->
+      <button id="upload-btn" class="upload-btn" disabled>Cick Here</button
+      ><br />
+      <h4>Results :</h4>
+    </div>
+  </div>
+</body>

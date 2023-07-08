@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<app-side-nav></app-side-nav>
+<body>
+  <div class="container-fluid">
+    <div class="col-md-12">
+      <div class="title text-center">
+        <h1><span>Upload</span> Your <span>Courses</span></h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="upload-section">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Cours Name</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Add the cours name "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group pt-3">
+              <div class="input-field">
+                <span class="fa fa-upload p-2"></span>
+                <input type="file" (change)="onFileSelected($event)" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Boutonwhen you click  besh ta3eml fiha traitement Ai -->
+        <button id="upload-btn" class="upload-btn" disabled>Cick Here</button>
+      </div>
+    </div>
+  </div>
+</body>
